@@ -13,14 +13,14 @@ routes = {
 }
 
 while True:
-    print("\n========== CAB BOOKING CHATBOT ==========")
+    print("\n CAB BOOKING CHATBOT ")
     print("1. Book Ride")
     print("2. Exit")
 
-    choice = input("Enter your choice: ").strip()
+    choice = input("Enter your choice:: ").strip()
 
     if choice == "1":
-        print("\n---------- SELECT CAB TYPE ----------")
+        print("\n SELECT CAB TYPE ")
         print("1. Auto - Rs. 12/km")
         print("2. Sedan - Rs. 18/km")
         print("3. SUV - Rs. 25/km")
@@ -33,7 +33,7 @@ while True:
 
         cab_name, rate = cab_rates[int(cab_choice)]
 
-        print("\n---------- SELECT ROUTE ----------")
+        print("\n SELECT ROUTE ")
         print("1. Pune Station -> Shivajinagar (5 km)")
         print("2. Swargate -> Kothrud (8 km)")
         print("3. Hinjawadi -> Wakad (10 km)")
@@ -59,7 +59,7 @@ while True:
             print("\n1. Confirm & Share OTP")
             print("2. Cancel Ride")
 
-            confirm_choice = input("Enter your choice: ").strip()
+            confirm_choice = input("Enter your choice:: ").strip()
 
             if confirm_choice == "1":
                 otp = random.randint(1000, 9999)
